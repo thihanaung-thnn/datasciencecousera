@@ -52,3 +52,9 @@ all(!is.na(data_total))
 if (!file.exists("HARUSD.csv")) {write.csv(data_total, "HARUSD.csv")}
 
 rm(list = ls()[ls() != "data_total"])
+
+# average of each variable for each activity and each subject
+average_by_activity_and_subject <- data_total %>% group_by(Person, Activities) %>% summarize_all(mean)
+
+# create data set 
+if (!file.exists("summary_average.csv")) {write.csv(average_by_activity_and_subject, "summary_average.csv")}
