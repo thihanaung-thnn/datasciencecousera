@@ -3,8 +3,8 @@
 
 The data set includes the following files:
 
-- **HARUSD.csv** contains combined data set of train and test data selected on average and standard deviation variables
-- **summary_average.csv** contains the average of each variable for each activity and each subject
+- **HARUSD.txt** contains combined data set of train and test data selected on average and standard deviation variables
+- **summary_average.txt** contains the average of each variable for each activity and each subject
 - **ucihar_data_getting_cleaning.R** contains R code how I extracted theses two data sets 
 - **COOKBOOK.md** contains explanation of the variables that contains in the data sets 
 
