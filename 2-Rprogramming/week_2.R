@@ -30,8 +30,8 @@ complete <- function(directory, id = 1:332) {
 }
 
 
-corr <- function(directory = 'specdata', threshold = 1000) {
-  
+corr <- function(directory = 'specdata', threshold = 0) {
+
   # filter files according to the number of threshold 
   complete_df <- complete(directory)
   
